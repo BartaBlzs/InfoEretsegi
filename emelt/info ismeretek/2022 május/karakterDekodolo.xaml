@@ -1,0 +1,20 @@
+﻿<Window x:Class="practiceWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practiceWPF"
+        mc:Ignorable="d"
+        Title="title" Height="400" Width="300">
+    <Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10">
+            <Label Content="Karakter" HorizontalAlignment="Left" Margin="0 0 10 0"/>
+            <TextBox HorizontalAlignment="Left" TextAlignment="Center" TextWrapping="Wrap" Text="" Width="30"/>
+        </StackPanel>
+        <StackPanel x:Name="sp"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            
+        </StackPanel>
+    </Grid>
+</Window>

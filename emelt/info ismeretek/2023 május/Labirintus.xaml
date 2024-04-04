@@ -1,0 +1,26 @@
+﻿<Window x:Class="practiceWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practiceWPF"
+        mc:Ignorable="d"
+        Title="Labirintus keszito" Height="550" Width="400">
+    <Grid>
+        <StackPanel Orientation="Horizontal" x:Name="StackPanel1"
+                    Height="25" VerticalAlignment="Top"
+                    Margin="10 20">
+            <Label Content="Labirintus merete [sor x oszlop]:" />
+            <ComboBox Margin="20 0" />
+            <ComboBox />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" x:Name="StackPanel2"
+                    Height="25" VerticalAlignment="Top" 
+                    Margin="0 70" HorizontalAlignment="Center">
+            <Button Click="CreateLab">Indulo labirintus letrehozasa</Button>
+            <Button Margin="30 0" Click="SaveLab">Labirintus mentese</Button>
+            <ComboBox x:Name="IndexCombo"/>
+        </StackPanel>
+        <StackPanel x:Name="SpContainer" Margin="0 110 0 0" />
+    </Grid>
+</Window>
